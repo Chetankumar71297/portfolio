@@ -1,0 +1,16 @@
+:root {
+  --clr-body: hsl(214, 37%, 96%);
+
+  --clr-heading-100: hsl(0, 0%, 100%);
+  --clr-heading-200: hsl(210, 63%, 97%);
+  --clr-heading-300: hsl(210, 30%, 91%);
+  --clr-heading-700: hsl(34, 79%, 6%);
+  --clr-heading-800: hsl(0, 0%, 0%);
+
+  --clr-profile-400: hsl(34, 100%, 55%);
+  --clr-profile-500: hsl(0, 96%, 46%);
+  --clr-profile-600: hsl(0, 10%, 4%, 50%);
+  --clr-profile-700: hsl(34, 79%, 6%, 50%);
+
+  --clr-card-300: hsl(34, 100%, 91%);
+}
