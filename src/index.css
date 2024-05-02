@@ -2,7 +2,7 @@
   --clr-body: hsl(214, 37%, 96%);
 
   --clr-heading-100: hsl(0, 0%, 100%);
-  --clr-heading-200: hsl(210, 63%, 97%);
+  --clr-heading-200: hsl(213, 60%, 97%);
   --clr-heading-300: hsl(210, 30%, 91%);
   --clr-heading-700: hsl(34, 79%, 6%);
   --clr-heading-800: hsl(0, 0%, 0%);
@@ -111,6 +111,13 @@ svg {
   }
 }
 
+/*utility class*/
+.linear-color {
+  font-size: 1.5rem;
+  background: linear-gradient(to right, hsl(34, 100%, 55%), hsl(0, 96%, 46%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /*general styling*/
 /*
 // <uniquifier>: Use a unique and descriptive class name
@@ -122,3 +129,85 @@ svg {
   font-weight: <weight>;
   font-style: normal;
 }*/
+body {
+  background-color: var(--clr-body);
+}
+
+.wrapper {
+  max-width: 1256px;
+  margin-inline: auto;
+  padding: 0 8px;
+}
+.container-one {
+  margin-top: 18px;
+  height: 104px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-tittle {
+  /*color: var(--clr-heading-800);*/
+  font-family: var(--ff-primary);
+  font-size: 1.5rem;
+  font-weight: var(--fw-regular);
+}
+
+.container-two {
+  padding-top: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.header-nav {
+  padding: 10px 0;
+  background-color: hsl(210, 63%, 97%);
+  height: 100px;
+  width: 503px;
+  border: 2px solid hsl(34, 79%, 6%, 20%);
+  border-radius: 20px;
+}
+nav {
+  width: 100%;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav button {
+  height: 80px;
+  width: 80px;
+  border: none;
+  background-color: rgb(225, 232, 239);
+  border-radius: 20px;
+}
+
+.header-nav button > a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-profile-700);
+}
+
+.header-nav button > a > p {
+  color: var(--clr-heading-800);
+}
+
+.header-nav button:hover,
+.header-nav button:focus-visible,
+.header-nav button.active {
+  background: linear-gradient(to right, hsl(34, 100%, 55%), hsl(0, 96%, 46%));
+}
+
+.header-nav button.active > a {
+  color: hsl(210, 63%, 97%);
+}
+
+.header-nav button.active > a > p {
+  color: hsl(210, 63%, 97%);
+}
